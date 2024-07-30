@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Packages Used and Why
+
+Below is a list of the main packages used in this project along with a brief explanation of their purposes:
+
+- **react**: The core library for building user interfaces.
+- **axios**: A promise-based HTTP client for making API requests.
+- **redux**: A predictable state container for JavaScript apps.
+- **react-router-dom**: Provides declarative routing for React web applications.
+- **styled-components**: Allows writing of actual CSS code to style components.
+- **MUI**: Maintains and follows the Material statndard design by Google.
+- **react-hook-form**: Make perfomance good form-validations and form-handling.
+- **react-hot-toast**: To make the toast messages.
+
+
