@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { lazy } from "react";
+import Error from "./ui/Error";
+const Segment = lazy(() => import("./features/segment/Segment"));
+
+// import Segment from "./features/segment/Segment";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      element: <Segment />,
+      errorElement: <Error />,
+      children: [{ path: "/", element: <Segment /> }],
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
